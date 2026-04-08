@@ -1,0 +1,61 @@
+{
+  "model": "CatBoost",
+  "best_iteration": 2916,
+  "train_time_sec": 36.1,
+  "best_threshold": 0.7,
+  "features_used": 67,
+  "constant_features_dropped": [
+    "Bwd PSH Flags",
+    "Fwd URG Flags",
+    "Bwd URG Flags",
+    "URG Flag Count"
+  ],
+  "val": {
+    "threshold": 0.7,
+    "accuracy": 0.979608,
+    "precision": 0.999465,
+    "recall": 0.979722,
+    "f1": 0.989495,
+    "roc_auc": 0.993865,
+    "pr_auc": 0.999877,
+    "confusion_matrix": [
+      [
+        82326,
+        2200
+      ],
+      [
+        85047,
+        4109011
+      ]
+    ],
+    "tn": 82326,
+    "fp": 2200,
+    "fn": 85047,
+    "tp": 4109011,
+    "fp_pct_benign": 2.6
+  },
+  "test": {
+    "threshold": 0.7,
+    "accuracy": 0.988462,
+    "precision": 0.999666,
+    "recall": 0.988678,
+    "f1": 0.994142,
+    "roc_auc": 0.996328,
+    "pr_auc": 0.999964,
+    "confusion_matrix": [
+      [
+        37596,
+        1299
+      ],
+      [
+        44564,
+        3891463
+      ]
+    ],
+    "tn": 37596,
+    "fp": 1299,
+    "fn": 44564,
+    "tp": 3891463,
+    "fp_pct_benign": 3.34
+  }
+}

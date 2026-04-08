@@ -1,0 +1,4 @@
+{
+  "best_threshold": 0.7,
+  "metric": "manual_fp_optimized"
+}

@@ -1,0 +1,77 @@
+{
+  "train": {
+    "total_rows": 549818,
+    "columns_with_inf": {
+      "Flow Bytes/s": {
+        "count": 144,
+        "pct": 0.0262
+      },
+      "Flow Packets/s": {
+        "count": 817,
+        "pct": 0.1486
+      }
+    },
+    "columns_with_nan": {
+      "Flow Bytes/s": {
+        "count": 673,
+        "pct": 0.1224
+      }
+    },
+    "summary": {
+      "total_inf_cells": 961,
+      "total_nan_cells": 673,
+      "columns_affected_inf": 2,
+      "columns_affected_nan": 1
+    }
+  },
+  "val": {
+    "total_rows": 4278584,
+    "columns_with_inf": {
+      "Flow Bytes/s": {
+        "count": 364,
+        "pct": 0.0085
+      },
+      "Flow Packets/s": {
+        "count": 1122,
+        "pct": 0.0262
+      }
+    },
+    "columns_with_nan": {
+      "Flow Bytes/s": {
+        "count": 758,
+        "pct": 0.0177
+      }
+    },
+    "summary": {
+      "total_inf_cells": 1486,
+      "total_nan_cells": 758,
+      "columns_affected_inf": 2,
+      "columns_affected_nan": 1
+    }
+  },
+  "test": {
+    "total_rows": 3974922,
+    "columns_with_inf": {
+      "Flow Bytes/s": {
+        "count": 263,
+        "pct": 0.0066
+      },
+      "Flow Packets/s": {
+        "count": 858,
+        "pct": 0.0216
+      }
+    },
+    "columns_with_nan": {
+      "Flow Bytes/s": {
+        "count": 595,
+        "pct": 0.015
+      }
+    },
+    "summary": {
+      "total_inf_cells": 1121,
+      "total_nan_cells": 595,
+      "columns_affected_inf": 2,
+      "columns_affected_nan": 1
+    }
+  }
+}
