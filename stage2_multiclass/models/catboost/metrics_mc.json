@@ -1,0 +1,116 @@
+{
+  "model": "CatBoost MultiClass",
+  "best_iteration": 130,
+  "train_time_sec": 10.1,
+  "num_classes": 8,
+  "val": {
+    "accuracy": 0.878216,
+    "macro_f1": 0.228778,
+    "weighted_f1": 0.891808,
+    "per_class": {
+      "Benign": {
+        "precision": 0.237,
+        "recall": 0.0221,
+        "f1": 0.0405,
+        "support": 84526
+      },
+      "DoS": {
+        "precision": 0.999,
+        "recall": 0.9777,
+        "f1": 0.9882,
+        "support": 3693007
+      },
+      "DDoS": {
+        "precision": 0.9902,
+        "recall": 0.2194,
+        "f1": 0.3592,
+        "support": 397838
+      },
+      "Recon": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "BruteForce": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "WebAttack": {
+        "precision": 0.005,
+        "recall": 0.0302,
+        "f1": 0.0085,
+        "support": 3377
+      },
+      "Bot": {
+        "precision": 0.1638,
+        "recall": 0.5856,
+        "f1": 0.256,
+        "support": 26803
+      },
+      "Spoofing": {
+        "precision": 0.1052,
+        "recall": 0.5762,
+        "f1": 0.1779,
+        "support": 73033
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.951907,
+    "macro_f1": 0.30844,
+    "weighted_f1": 0.965822,
+    "per_class": {
+      "Benign": {
+        "precision": 0.349,
+        "recall": 0.0218,
+        "f1": 0.0411,
+        "support": 38895
+      },
+      "DoS": {
+        "precision": 0.9995,
+        "recall": 0.9743,
+        "f1": 0.9867,
+        "support": 3503938
+      },
+      "DDoS": {
+        "precision": 0.9888,
+        "recall": 0.8863,
+        "f1": 0.9347,
+        "support": 394910
+      },
+      "Recon": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "BruteForce": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "WebAttack": {
+        "precision": 0.0044,
+        "recall": 0.0304,
+        "f1": 0.0077,
+        "support": 1348
+      },
+      "Bot": {
+        "precision": 0.2848,
+        "recall": 0.504,
+        "f1": 0.3639,
+        "support": 26482
+      },
+      "Spoofing": {
+        "precision": 0.0748,
+        "recall": 0.618,
+        "f1": 0.1334,
+        "support": 9349
+      }
+    }
+  }
+}
