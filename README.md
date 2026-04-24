@@ -1,7 +1,9 @@
-# AnomalyNet-ml
+# AnomalyNet-ml · v1.1
 
-**CatBoost-based IDS model for IoT network anomaly detection**  
-Trained on [CIC IoT Dataset 2024](https://www.unb.ca/cic/datasets/iotdataset-2024.html) · 71 CICFlowMeter features · Binary classifier (benign / attack)
+**CatBoost-based IDS model collection for network anomaly detection**  
+IoT & General Network · 71 CICFlowMeter features · Binary + multiclass pipelines
+
+> **v1.1** adds `general_network/` — models trained on CICIDS 2017 for PC/home network traffic (FPR=0.08%, Macro F1=0.9777)
 
 ---
 
@@ -19,10 +21,34 @@ Trained on [CIC IoT Dataset 2024](https://www.unb.ca/cic/datasets/iotdataset-202
 
 > **Cross-dataset note**: When evaluated on CIC-IDS 2018 (enterprise traffic), benign FP rate rises to ~94 % — expected domain shift between IoT and enterprise traffic patterns. Attack recall remains ~95 %.
 
+## Models overview
+
+| Model | Dataset | F1 | FPR | Classes |
+|-------|---------|-----|-----|---------|
+| `model/model.cbm` (IoT Stage1) | CIC IoT-DIAD 2024 | 0.9941 | 0.1% | binary |
+| `stage2_multiclass/` (IoT Stage2) | CIC IoT-DIAD 2024 + ext | 0.9309 | — | 8 |
+| `stage3_cic2023/` (IoT Stage3) | CIC IoT 2023 | 0.819 | — | 8 |
+| **`general_network/general_stage1`** | **CICIDS 2017** | **0.9984** | **0.08%** | **binary** |
+| **`general_network/general_stage2`** | **CICIDS 2017** | **0.9777** | — | **7** |
+
+---
+
 ## Repository structure
 
 ```
 AnomalyNet-ml/
+├── general_network/              # NEW v1.1 — PC/home network models
+│   ├── artifacts/
+│   │   ├── feature_contract.json
+│   │   ├── preprocessing_params.json  # CICIDS 2017 medians
+│   │   ├── threshold.json
+│   │   ├── class_names.json
+│   │   └── metrics.json
+│   └── models/
+│       ├── general_stage1/catboost/model.cbm
+│       └── general_stage2/catboost/
+│           ├── model_mc.cbm
+│           └── class_mapping.json
 ├── model/
 │   ├── model.cbm                 # Trained CatBoost model (12 MB)
 │   ├── metrics.json              # Full metrics (val + test)
