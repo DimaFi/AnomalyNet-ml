@@ -1,0 +1,11 @@
+{
+  "id": "anomalynet-iot-advanced",
+  "name": "AnomalyNet IoT Advanced",
+  "version": "1.0",
+  "description": "Продвинутый 8-классовый детектор для IoT-трафика (CIC-IoT-2023). 46 признаков. Macro F1=0.819. Используется как Stage3 в каскаде Advanced.",
+  "preprocessor": "ciciot_2023_46",
+  "model_type": "multiclass",
+  "threshold": 0.50,
+  "is_gate": false,
+  "cascade_next": null
+}

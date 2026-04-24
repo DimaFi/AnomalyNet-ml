@@ -1,0 +1,11 @@
+{
+  "id": "anomalynet-iot-multiclass",
+  "name": "AnomalyNet IoT Multiclass",
+  "version": "1.0",
+  "description": "8-классовый детектор для IoT-трафика: DoS, DDoS, Recon, BruteForce, WebAttack, Bot, Spoofing. 71 CICFlowMeter признак.",
+  "preprocessor": "cicflowmeter_71",
+  "model_type": "multiclass",
+  "threshold": 0.50,
+  "is_gate": false,
+  "cascade_next": null
+}

@@ -1,0 +1,9 @@
+{
+  "0": "DoS",
+  "1": "DDoS",
+  "2": "BruteForce",
+  "3": "WebAttack",
+  "4": "Recon",
+  "5": "Botnet",
+  "6": "Infiltration"
+}

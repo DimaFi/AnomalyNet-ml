@@ -1,0 +1,11 @@
+{
+  "id": "anomalynet-iot-binary",
+  "name": "AnomalyNet IoT Binary",
+  "version": "1.0",
+  "description": "Бинарный детектор аномалий для IoT-трафика (CIC-IoT-DIAD 2024). 71 CICFlowMeter признак. F1=99.4%.",
+  "preprocessor": "cicflowmeter_71",
+  "model_type": "binary",
+  "threshold": 0.70,
+  "is_gate": true,
+  "cascade_next": "anomalynet-iot-multiclass"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "anomalynet-general-binary",
+  "name": "AnomalyNet General Binary",
+  "version": "1.0",
+  "description": "Бинарный детектор для общего сетевого трафика (CICIDS 2017). ПК, серверы, телефоны. 71 CICFlowMeter признак.",
+  "preprocessor": "cicflowmeter_71",
+  "model_type": "binary",
+  "threshold": 0.41,
+  "is_gate": true,
+  "cascade_next": "anomalynet-general-multiclass"
+}
